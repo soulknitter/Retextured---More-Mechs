@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Retextured! - More Mechs</name>
+	<author>Nalzurin, Soul, IcyCheeseCake</author>
+	<packageId>Nalzurin.RetextureMoreMechs</packageId>
+	<supportedVersions>
+	<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>ludeon.rimworld.biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+			<packageId>zal.moremechanoids</packageId>
+			<displayName>More Mechanoids (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3557972474</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+		<description>Retextured! is a series of retexture mods that aim to bring back old textures from select mods to modern standards. Vanilla friendly guaranteed.👍
+
+This installment deals with retexturing More Mechanoids.
+	</description>
+	<loadAfter>
+		<li>zal.moremechanoids</li>
+	</loadAfter>
+</ModMetaData> 
