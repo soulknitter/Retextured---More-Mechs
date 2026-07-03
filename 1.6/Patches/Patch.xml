@@ -1,163 +1,278 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- Crawler -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/PawnKindDef[defName = "Mech_Crawler"]/lifeStages</xpath>
-		<value>
-			<lifeStages>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/Crawler</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Crawler</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.6</drawSize>
-						<shadowData>
-							<volume>(0.4, 0.8, 0.4)</volume>
-						</shadowData>
-					</bodyGraphicData>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Crawler -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Crawler"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/Crawler</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Crawler</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.6</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientCrawler</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Crawler</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.6</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
 				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/AncientCrawler</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Crawler</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.6</drawSize>
-						<shadowData>
-							<volume>(0.4, 0.8, 0.4)</volume>
-						</shadowData>
-					</bodyGraphicData>
+				<!-- Skullywag -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Skullywag"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/Skullywag</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Skullywag</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.25</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientSkullywag</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Skullywag</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.25</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
 				</li>
-			</lifeStages>
-		</value>
+				<!-- Flamebot -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Flamebot"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/Flamebot</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Flamebot</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.7</drawSize>
+									<shadowData>
+										<volume>(0.3, 0.3, 0.3)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientFlamebot</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Flamebot</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.7</drawSize>
+									<shadowData>
+										<volume>(0.3, 0.3, 0.3)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+				<!-- Assaulter -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Assaulter"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/Assaulter</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Assaulter</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.25</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientAssaulter</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Assaulter</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.25</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+				<!-- Mammoth -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Mammoth"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/Mammoth</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Mammoth</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>3</drawSize>
+									<shadowData>
+										<volume>(0.7, 0.9, 0.7)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientMammoth</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Mammoth</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>3</drawSize>
+									<shadowData>
+										<volume>(0.7, 0.9, 0.7)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<!-- Biotech disabled: mechs can't be player-gestated, so every spawn is wild = Ancient. -->
+			<operations>
+				<!-- Crawler -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Crawler"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientCrawler</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Crawler</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.6</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+				<!-- Skullywag -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Skullywag"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientSkullywag</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Skullywag</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.25</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+				<!-- Flamebot -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Flamebot"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientFlamebot</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Flamebot</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.7</drawSize>
+									<shadowData>
+										<volume>(0.3, 0.3, 0.3)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+				<!-- Assaulter -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Assaulter"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientAssaulter</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Assaulter</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>1.25</drawSize>
+									<shadowData>
+										<volume>(0.4, 0.8, 0.4)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+				<!-- Mammoth -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Mech_Mammoth"]/lifeStages</xpath>
+					<value>
+						<lifeStages>
+							<li>
+								<bodyGraphicData>
+									<texPath>Things/Pawn/Mechanoids/AncientMammoth</texPath>
+									<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Mammoth</maskPath>
+									<shaderType>CutoutWithOverlay</shaderType>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<drawSize>3</drawSize>
+									<shadowData>
+										<volume>(0.7, 0.9, 0.7)</volume>
+									</shadowData>
+								</bodyGraphicData>
+							</li>
+						</lifeStages>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
-	<!-- Skullywag -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/PawnKindDef[defName = "Mech_Skullywag"]/lifeStages</xpath>
-		<value>
-			<lifeStages>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/Skullywag</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Skullywag</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.25</drawSize>
-						<shadowData>
-							<volume>(0.4, 0.8, 0.4)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/AncientSkullywag</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Skullywag</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.25</drawSize>
-						<shadowData>
-							<volume>(0.4, 0.8, 0.4)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-			</lifeStages>
-		</value>
-	</Operation>
-	<!-- Flamebot -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/PawnKindDef[defName = "Mech_Flamebot"]/lifeStages</xpath>
-		<value>
-			<lifeStages>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/Flamebot</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Flamebot</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.7</drawSize>
-						<shadowData>
-							<volume>(0.3, 0.3, 0.3)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/AncientFlamebot</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Flamebot</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.7</drawSize>
-						<shadowData>
-							<volume>(0.3, 0.3, 0.3)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-			</lifeStages>
-		</value>
-	</Operation>
-	<!-- Assaulter -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/PawnKindDef[defName = "Mech_Assaulter"]/lifeStages</xpath>
-		<value>
-			<lifeStages>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/Assaulter</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Assaulter</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.25</drawSize>
-						<shadowData>
-							<volume>(0.4, 0.8, 0.4)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/AncientAssaulter</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Assaulter</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>1.25</drawSize>
-						<shadowData>
-							<volume>(0.4, 0.8, 0.4)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-			</lifeStages>
-		</value>
-	</Operation>
-	<!-- Mammoth -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/PawnKindDef[defName = "Mech_Mammoth"]/lifeStages</xpath>
-		<value>
-			<lifeStages>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/Mammoth</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Mammoth</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>3</drawSize>
-						<shadowData>
-							<volume>(0.7, 0.9, 0.7)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Mechanoids/AncientMammoth</texPath>
-						<maskPath>Things/Pawn/Mechanoids/AllegianceOverlay/Mammoth</maskPath>
-						<shaderType>CutoutWithOverlay</shaderType>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<drawSize>3</drawSize>
-						<shadowData>
-							<volume>(0.7, 0.9, 0.7)</volume>
-						</shadowData>
-					</bodyGraphicData>
-				</li>
-			</lifeStages>
-		</value>
-	</Operation>
+	
 </Patch>
